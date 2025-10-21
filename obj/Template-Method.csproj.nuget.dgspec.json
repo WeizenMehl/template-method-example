@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/samuel/Documents/Template-Method/Template-Method.csproj": {}
+    "/home/samuel/Documents/template-method-example/Template-Method.csproj": {}
   },
   "projects": {
-    "/home/samuel/Documents/Template-Method/Template-Method.csproj": {
+    "/home/samuel/Documents/template-method-example/Template-Method.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/samuel/Documents/Template-Method/Template-Method.csproj",
+        "projectUniqueName": "/home/samuel/Documents/template-method-example/Template-Method.csproj",
         "projectName": "Template-Method",
-        "projectPath": "/home/samuel/Documents/Template-Method/Template-Method.csproj",
+        "projectPath": "/home/samuel/Documents/template-method-example/Template-Method.csproj",
         "packagesPath": "/home/samuel/.nuget/packages/",
-        "outputPath": "/home/samuel/Documents/Template-Method/obj/",
+        "outputPath": "/home/samuel/Documents/template-method-example/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/samuel/.nuget/NuGet/NuGet.Config"

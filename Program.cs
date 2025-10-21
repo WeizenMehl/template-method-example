@@ -1,15 +1,18 @@
 ﻿using System;
 
-class Program
+namespace Template_Method
 {
-    static void Main()
+    class Program
     {
-        Console.WriteLine("Verarbeitung der Textdatei:");
-        FileProcessor txtProcessor = new TextFileProcessor();
-        txtProcessor.ProcessFile("data.txt");
+        static void Main()
+        {
+            Console.WriteLine("Verarbeitung der Textdatei:");
+            FileProcessor txtProcessor = new TextFileProcessor();
+            txtProcessor.ProcessFile("data.txt");
 
-        Console.WriteLine("\nVerarbeitung der CSV-Datei:");
-        FileProcessor csvProcessor = new CsvFileProcessor();
-        csvProcessor.ProcessFile("data.csv");
+            Console.WriteLine("\nVerarbeitung der CSV-Datei:");
+            FileProcessor csvProcessor = new CsvFileProcessor();
+            csvProcessor.ProcessFile("data.csv");
+        }
     }
 }

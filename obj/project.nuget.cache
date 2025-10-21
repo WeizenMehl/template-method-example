@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hhpRL14P8U0MyQtrgkCz0o0cfu2msGBNZwu7QtFA8jIpZ2cgKKGv0SWtokLjIPfJyTqPM2xp/t999Moql74aYQ==",
+  "dgSpecHash": "afQabk7oXmo3+DOmUOmuGZTzIhy7l1OA+O8lzmjH0NgaC9SHgZLi92MROWrkGd7SVSG8t4e44cHkLlosbQHB+w==",
   "success": true,
-  "projectFilePath": "/home/samuel/Documents/Template-Method/Template-Method.csproj",
+  "projectFilePath": "/home/samuel/Documents/template-method-example/Template-Method.csproj",
   "expectedPackageFiles": [
     "/home/samuel/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.20/microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512"
   ],

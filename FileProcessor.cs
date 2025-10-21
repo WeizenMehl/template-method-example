@@ -1,30 +1,32 @@
 using System;
 using System.IO;
-
-abstract class FileProcessor
+namespace Template_Method
 {
-    public void ProcessFile(string path)
+    abstract class FileProcessor
     {
-        OpenFile(path);
-        ReadData();
-        ProcessData();
-        CloseFile();
+        public void ProcessFile(string path)
+        {
+            OpenFile(path);
+            ReadData();
+            ProcessData();
+            CloseFile();
+        }
+
+        protected StreamReader reader;
+
+        protected void OpenFile(string path)
+        {
+            Console.WriteLine($"Öffne Datei: {path}");
+            reader = new StreamReader(path);
+        }
+
+        protected void CloseFile()
+        {
+            Console.WriteLine("Schließe Datei.");
+            reader.Close();
+        }
+
+        protected abstract void ReadData();
+        protected abstract void ProcessData();
     }
-
-    protected StreamReader reader;
-
-    protected void OpenFile(string path)
-    {
-        Console.WriteLine($"Öffne Datei: {path}");
-        reader = new StreamReader(path);
-    }
-
-    protected void CloseFile()
-    {
-        Console.WriteLine("Schließe Datei.");
-        reader.Close();
-    }
-
-    protected abstract void ReadData();
-    protected abstract void ProcessData();
 }
