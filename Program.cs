@@ -1,14 +1,15 @@
-﻿namespace Template_Method
+﻿using System;
+
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            HotBeverage tea = new Tea();
-            tea.PrepareRecipe();
-            Console.WriteLine("\n");
-            HotBeverage coffee = new Coffee();
-            coffee.PrepareRecipe();
-        }
+        Console.WriteLine("Verarbeitung der Textdatei:");
+        FileProcessor txtProcessor = new TextFileProcessor();
+        txtProcessor.ProcessFile("data.txt");
+
+        Console.WriteLine("\nVerarbeitung der CSV-Datei:");
+        FileProcessor csvProcessor = new CsvFileProcessor();
+        csvProcessor.ProcessFile("data.csv");
     }
 }
